@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Hotel_Recommendations</title>
+    <meta charset="utf-8">
+    <meta name="author" content="G11">
+    <meta name="description" content="hotel_rec">
+    <meta name="keywords" content="hotel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="body-hotel">
+    <header>
+        <div class="navbar-hotel">
+            <a href="index.html">
+                <img src="image/photo_6125304580725129165_y.jpg" alt="TropiGO Logo" class="logo">
+            </a>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="flight.html">Flights</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="carhire.html">Car Rental</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="feedback.html">Feedbacks</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <h1 class="h1-hotel">Hotel Recommendations</h1>
+        <hr class="hr-hotel">
+    </header>
+
+    <article>
+        <h2 class="h2">Click on one to see recommendations for the top 2 hotels in each state.</h2>
+        <script src="jvs/Hotel.js"></script>
+        <section class="states">
+            <figure class="KL" onclick="hotelRec('KL')">
+                <img src="image/KualaL.jpeg" alt="Kuala_Lumpur"/>
+                <figcaption>Kuala Lumpur</figcaption>
+            </figure>
+
+            <figure class="Slngr" onclick="hotelRec('Slngr')">
+                <img src="image/Selangor.jpg" alt="Selangor"/>
+                <figcaption>Selangor</figcaption>
+            </figure>
+        
+            <figure class="Srwk" onclick="hotelRec('Srwk')">
+                <img src="image/Sarawak.jpg" alt="Sarawak"/>
+                <figcaption>Sarawak</figcaption>
+            </figure>
+        
+            <figure class="Sbh" onclick="hotelRec('Sbh')">
+                <img src="image/Sabah.png" alt="Sabah"/>
+                <figcaption>Sabah</figcaption>
+            </figure>
+
+            <figure class="PPng" onclick="hotelRec('PPng')">
+                <img src="image/PulauP.jpg" alt="Pulau_Pinang"/>
+                <figcaption>Pulau Pinang</figcaption>
+                <figcaption>(Penang Island)</figcaption>
+            </figure>
+        </section>
+
+        <section id="hotels" class="hotels">
+            <h2>Top 2 Hotel Recommendations</h2>
+            <p id="hotelsRec">Click on one of them to view top 2 hotels recommendation of each state.</p>
+        </section>
+    </article>
+    <hr class="short-hr">
+    <footer>
+        <div>
+            <h3 class="h3-hotel">&copy; <a href="About.html" class="lnk">Group_11</a> | Last updated: 23 / 11 / 2024</h3>
+        </div>
+    </footer>
+    <h4 class="h4-hotel" style="margin-top: 10px;"><em>Disclaimer: This website is created for education and non-commercial use only. It is an assignment for completion of unit, DBI211 Fundamentals of Web Technology based on the Foundation (IT/Multimedia) course from Swinburne University of Technology Sarawak Campus.</em></h4>
+</body-hotel>
+
+</html>
